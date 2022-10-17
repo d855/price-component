@@ -1,0 +1,46 @@
+@import "https://necolas.github.io/normalize.css/8.0.1/normalize.css";
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%)
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+body {
+    background: var(--light-gray);
+}
+
+main {
+    padding-top: 50px;
+}
+
+#content {
+    width: 400px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px 10px 0 0;
+    padding: 15px 40px;
+}
+
+#content div h2 {
+    color: var(--cyan);
+}
+
+#content div p:first-of-type {
+    color: var(--bright-yellow);
+    font-weight: bold;
+}
+
+#content div p:nth-of-type(2) {
+    color: var(--grayish-blue);
+    line-height: 1.9;
+}
+
+#content div:nth-of-type(2) {
+    background: var(--cyan);
+    border-radius: 0 0 10px 10px;
+}
